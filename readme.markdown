@@ -2,15 +2,23 @@
 
 ## This is a clone of hyperx with ES6 module compatibility
 
-The only difference between hyperx-es6 and hyperx, it that hyperx-es6 exports as an ES6 module. This allows you to use hyperx with Rollup using standard ES6 syntax:
+The only difference between hyperx-es6 and hyperx, it that hyperx-es6 exports as an ES6 module. This allows you to use hyperx with Rollup using standard ES6 module import syntax.
 
+
+# Install
+
+```
+npm install hyperx-es6
+```
+
+# Import in Project
 ```javascript
 import {hyperx} from 'hyperx-es6'
 ```
 
 After that, you can use it like you would normally use hyperx.
 
-tagged template string virtual dom builder
+# Tagged Template String Virtual Dom Builder
 
 This module is similar to JSX, but provided as a standards-compliant ES6 tagged
 template string function.
@@ -26,7 +34,7 @@ parser down the wire.
 
 [2]: https://npmjs.com/package/hyperxify
 
-# compatibility
+# Compatibility
 
 [Template strings][1] are available in:
 node 4+, chrome 41, firefox 34, edge, opera 28, safari 9
@@ -35,9 +43,9 @@ If you're targeting these platforms, there's no need to use a transpiler!
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/template_strings
 
-# examples
+# Examples
 
-## virtual-dom node example
+## Virtual-dom Node Example
 
 ``` js
 var vdom = require('virtual-dom')
@@ -69,7 +77,7 @@ $ node vdom.js
 </div>
 ```
 
-## react node example
+## React Node Example
 
 ``` js
 var React = require('react')
@@ -90,7 +98,7 @@ var tree = hx`<div>
 console.log(toString(tree))
 ```
 
-## hyperscript node example
+## Hyperscript Node Example
 
 ``` js
 var h = require('hyperscript')
@@ -110,7 +118,7 @@ var tree = hx`<div>
 console.log(tree.outerHTML)
 ```
 
-## virtual-dom/main-loop browser example
+## Virtual-dom/main-loop Browser Example
 
 ``` js
 var vdom = require('virtual-dom')
@@ -133,7 +141,7 @@ function render (state) {
 }
 ```
 
-## react browser example
+## React Browser Example
 
 ``` js
 var React = require('react')
@@ -171,7 +179,7 @@ convertTaggedTemplateOutputToDomBuilder`<h1>hello world</h1>`
 ```
 
 
-# api
+# API
 
 ```
 var hyperx = require('hyperx')
@@ -197,17 +205,12 @@ is useful if you want to implement a pre-processor to generate javascript from
 hyperx syntax.
 * `opts.attrToProp` - turn off attribute to property conversions when `false`
 
-# prior art
+# Prior Art
 
 * http://www.2ality.com/2014/07/jsx-template-strings.html?m=1
 * http://facebook.github.io/jsx/#why-not-template-literals (respectfully disagree)
 
-# license
+# License
 
 BSD
 
-# install
-
-```
-npm install hyperx
-```
