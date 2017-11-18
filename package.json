@@ -1,6 +1,6 @@
 {
   "name": "hyperx-es6",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "tagged template string virtual dom builder",
   "main": "index.js",
   "scripts": {
@@ -47,9 +47,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/substack/hyperx.git"
+    "url": "git+https://github.com/composor/hyperx-es6.git"
   },
   "bugs": {
-    "url": "https://github.com/substack/hyperx/issues"
+    "url": "https://github.com/composor/hyperx-es6/issues"
   }
 }
