@@ -1,6 +1,6 @@
 {
   "name": "hyperx-es6",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "tagged template string virtual dom builder",
   "main": "index.js",
   "scripts": {
@@ -19,12 +19,6 @@
   "author": "substack",
   "license": "BSD",
   "devDependencies": {
-    "covert": "^1.1.0",
-    "hyperscript": "^1.4.7",
-    "tape": "^4.4.0",
-    "virtual-dom": "^2.1.1"
-  },
-  "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-helpers": "^6.24.1",
@@ -32,14 +26,11 @@
     "babel-plugin-transform-es2015-parameters": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "gulp": "^3.9.1",
-    "replace-in-file": "^2.6.4",
     "rollup": "^0.49.2",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-commonjs": "^8.2.0",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-resolve": "0.0.1-predev.1",
-    "rollup-plugin-uglify": "^2.0.1",
-    "writefile": "^0.2.8"
+    "rollup-plugin-uglify": "^2.0.1"
   },
   "directories": {
     "example": "example",
